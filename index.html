@@ -4,9 +4,20 @@
 
         <!-- Latest compiled and minified CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        
 
         <!-- Latest compiled JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+
+     
+ 
+  <link rel="stylesheet" href="styles.css">
+       
+
         <style>
              .hehe:hover{
                 background-color: rgb(64, 62, 60) ;
@@ -16,37 +27,69 @@
                 
             }
 
+            .box:hover{
+                background-color:rgb(51, 38, 7);     
+            }
+
+            .mi:hover{
+                
+                transform: scale(1.02);
+                
+            }
+            .n:hover{
+                background-color: darkgoldenrod;
+            }
+
+                                        .bgimage {
+                                height:100vh;
+                                background: url('images/heroImage.jpeg');
+                                background-size:cover;
+                                position:relative;
+                            }
+                            /* text css above hero image*/
+                            .hero_title {
+                                font-size: 4.5rem;
+                                margin-top: 50px;
+                            }
+                            .hero_desc {
+                                font-size: 2rem;
+                            }
+                            .hero-text {
+                                text-align: center;
+                                position: absolute;
+                                top: 48%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                color: white;
+                            }
+                            .typing-effect {
+                                    overflow: hidden;
+                                    border-right: 0.2px solid darkgoldenrod; 
+                                    white-space: nowrap;
+                                    margin:  auto;
+                                    letter-spacing: unset;
+                                    animation: typing 4s steps(40);
+                                    animation-delay: 1s;
+                                    }
+
+                                    @keyframes typing {
+                                    from {
+                                        width: 20%;
+                                    }
+                                    to {
+                                        width:50%;
+                                        
+                                    }
+                                    }
 
 
-            .bgimage {
-    height:100vh;
-    background: url('images/heroImage.jpeg');
-    background-size:cover;
-    position:relative;
-}
-/* text css above hero image*/
-.hero_title {
-    font-size: 4.5rem;
-}
-.hero_desc {
-    font-size: 2rem;
-}
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-
-
+                                                                
+                                                    
 
     
         </style>
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        
         
 
        
@@ -58,18 +101,18 @@
 
             <div>
                 
-                <nav class="navbar navbar-expand-lg bg-dark ">
+                <nav class="navbar fixed-top navbar-expand-lg bg-dark ">
                     <div class="container-fluid">
-                      <!--a class="navbar-brand" href="#">Navbar</a-->
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <a class="navbar-brand" href="#" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: darkkhaki; text-shadow: #FC0 1px 0 10px; font-size: 22.5px;"><b>A_mJ</b></a>
+                      <button class="navbar-toggler n border-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation " >
                         <span class="navbar-toggler-icon"></span>
                       </button>
-                      <div class="collapse navbar-collapse" >
+                      <div class="collapse navbar-collapse" id="navbarNav" >
                         <!--li  style="color: rgb(224, 167, 54); font-size: 25px;"> Arsha M Joby</li-->
                         <ul class="navbar-nav ms-auto">
                           
                           <li class="nav-item hehe">
-                            <a class="nav-link active" href="#Home"><span style="color: rgb(171, 127, 15); font-size: 17.2px;">Home</span></a>
+                            <a class="nav-link active" href="#Home" ><span style="color: rgb(171, 127, 15); font-size: 17.2px;">Home</span></a>
                           </li>
                           <li class="nav-item hehe">
                             <a class="nav-link active" href="#About"><span style="color: darkgoldenrod; font-size: 17.2px">About</span></a>
@@ -87,43 +130,46 @@
                   </nav>
 
             </div>
+            <!--text-shadow: #FC0 1px 0 10px;-->
 
             <section class="bgimage">
                 <div class="container-fluid">
                     <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                        <h3 class="hero_title" style="font-family:cursive; color: rgb(208, 172, 82);"><marquee direction="up" behavior="slide" style="padding-left: 350px;"></i>Welcome to my WebPage!</h3>
-                        <p class="hero_desc" style="color: darkgoldenrod; padding-left: 250px;  display:flex; align-items :baseline; ">Unleash the Curiosity&ensp;<i class="bi bi-toggle2-on display-6" style="color: rgb(205, 156, 10);" ></i></marquee></p>
-                        
+                    <div class="col-lg-12 col-sm-11 hero-text">
+                        <h3 class="hero_title" style="font-family:poppins; color: rgb(208, 172, 82);"><marquee direction="up" behavior="slide" style="padding-left: 302px; "></i>Welcome to my WebPage!</h3>
+                            <div class="typing-effect" class="cursor">
+                                <p class="hero_desc" style="color: darkgoldenrod; padding-left: 205px;  display:flex; align-items :baseline; font-family: 'Courier New', Courier, monospace;">Unleash the Curiosity&ensp;<i class="bi bi-toggle2-on display-6" style="color: rgb(205, 156, 10);" ></i></marquee></p>
+                            </div>
                     </div>
                     </div>
                 </div>
             </section>
 
-            <div class="container mt-5">
+            <div class="container pt-5 ">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <img src="bg7.1.jpg" class="rounded-4" width="52%" height="auto" style="background-color: transparent;" >
+                    <div class="col-sm-6 ">
+                        <img src="bg.png" class="rounded-4" width="52%" height="auto" style="background-color: transparent;" >
 
                     </div>
 
                     <div class="col-sm-6"  id="Home">
                         <div class="animated jello infinite">
-                        <p><h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 60px;color: azure; padding-top: 150px ;padding-left: 1px; font-size: 72px;" >Arsha
+                        <p><h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 60px;color: azure; padding-top: 145px ;font-size: 72px;" >Arsha
                             <small class="text-muted">M Joby</small></h1></p>
                         </div>
+                       
                         <p><span style="color: rgb(217, 164, 29); font-family: 'Courier New', Courier, monospace; font-size: 17.3px; padding-left: 10px;"> Inquisitive| Potential Developer </span></p>
-
+                    
                     </div>
                 </div>
             </div>
 
-
-            <div class="container mt-5" id="About">
+           
+            <div class="container pt-5" id="About">
              
                 
-                <p ><h2 style="color: rgb(255, 255, 255);">About:</h2>
-                <div class="row  ">
+                <p><h2 style="color: rgb(255, 255, 255);">About:</h2>
+                <div class="row">
                     
                     
                     
@@ -196,7 +242,7 @@
 
 
                     
-                    <div class="container mt-5" >
+                    <div class="container pt-5" >
 
 
                         <div class="container mt-5">
@@ -206,42 +252,56 @@
                             
                                 <div class=" col-lg-6 col-sm-6;">
                                     <!--div class="  p-3 border border-warning ; ; rounded-4 ;.bg-gradient bg-secondary  bg-opacity-25 "-->
-                                
+                                <div class="box">
                                         <div class="shadow-sm p-3 mb-5 bg-body rounded .bg-gradient bg-secondary  bg-opacity-25">
                                             <div class="shadow shadow-warning shadow-intensity-lg">
                                             <li style="color: darkgoldenrod;font-size:17.5px;"><b>HTML</b>&ensp;&ensp;&ensp;&ensp;&ensp;-&ensp;Intermediate</li>
                                         </div>
                                         </div>
+                                </div> 
+
+                                <div class="box">
                                         <div class="shadow-sm p-3 mb-5 bg-body rounded .bg-gradient bg-secondary  bg-opacity-25 ">
                                             <div class="shadow shadow-warning shadow-intensity-lg">
                                             <li style="color: darkgoldenrod;font-size:17.5px;"><b>Python</b>&ensp;&ensp;&ensp;&ensp;-&ensp;Beginner</li>
                                         </div>
                                         </div>
+                                </div>
 
+
+                                <div class="box">
                                         <div class="shadow-sm p-3 mb-5 bg-body rounded .bg-gradient bg-secondary  bg-opacity-25 ">
                                             <div class="shadow shadow-warning shadow-intensity-lg">
                                             <li style="color: darkgoldenrod;font-size:17.5px;"><b>Bootstrap</b>&ensp;-&ensp;Beginner</li>
                                         </div>
                                             
                                             </div>
-                                        
+                                </div>
+                                
+                                <div class="box">        
                                         <div class="shadow-sm p-3 mb-5 bg-body rounded .bg-gradient bg-secondary  bg-opacity-25 ">
                                             <div class="shadow shadow-warning shadow-intensity-lg">
                                             <li style="color: darkgoldenrod;font-size:17.5px;"><b>Javascript</b>&ensp;-&ensp;Beginner</li>
                                         </div>
                                         </div>
+                                </div>
 
+                                <div class="box">
                                         <div class="shadow-sm p-3 mb-5 bg-body rounded .bg-gradient bg-secondary  bg-opacity-25 ">
                                             <div class="shadow shadow-warning shadow-intensity-lg">
                                             <li style="color: darkgoldenrod;font-size:17.5px;"><b>Java</b>&ensp;&emsp;&emsp;-&ensp;&ensp;Intermediate</li>
                                         </div>
                                         </div>
+                                </div>
+
+                                <div class="box">
 
                                         <div class="shadow-sm p-3 mb-5 bg-body rounded .bg-gradient bg-secondary  bg-opacity-25 ">
                                             <div class="shadow shadow-warning shadow-intensity-lg">
                                             <li style="color: darkgoldenrod;font-size:17.5px;"><b>SQL</b>&ensp;&emsp;&emsp;-&ensp;&ensp;Intermediate</li>
                                         </div>
                                         </div>
+                                </div>
                                 </div>
                                     
                                     <!--/div-->
@@ -251,39 +311,55 @@
                                 <div class="col-lg-6 col-sm-6">
                                     <!--div class="  p-3 border border-warning ; ; rounded-4  ;.bg-gradient bg-secondary  bg-opacity-25 "-->
                                 
+                                <div class="box">
                                     <div class="shadow-sm p-3 mb-5 bg-body rounded .bg-gradient bg-secondary  bg-opacity-25">
                                         <div class="shadow shadow-warning shadow-intensity-lg">
                                         <li style="color: darkgoldenrod;font-size:17.5px;"><b>Volunteering</b></li>
                                     </div>
                                     </div>
+                                </div>
+
+                                <div class="box">
                                     <div class="shadow-sm p-3 mb-5 bg-body rounded .bg-gradient bg-secondary  bg-opacity-25">
                                         <div class="shadow shadow-warning shadow-intensity-lg">
                                         <li style="color: darkgoldenrod;font-size:17.5px;"><b>Leadership Skills</b></li>
                                     </div>
                                     </div>
+
+                                </div>
+
+                                <div class="box">
                                     <div class="shadow-sm p-3 mb-5 bg-body rounded .bg-gradient bg-secondary  bg-opacity-25 ">
                                         <div class="shadow shadow-warning shadow-intensity-lg">
                                         <li style="color: darkgoldenrod;font-size:17.5px;"><b>Content Writing</b></li>
                                     </div>
                                     </div>
-                                   
+                                </div>
+
+                                  <div class="box">   
 
                                     <div class="shadow-sm p-3 mb-5 bg-body rounded .bg-gradient bg-secondary  bg-opacity-25 ">
                                         <div class="shadow shadow-warning shadow-intensity-lg">
                                         <li style="color: darkgoldenrod;font-size:17.5px;"><b>Event Management</b></li>
                                     </div>
                                     </div>
+                                  </div>
+
+                                  <div class="box">
                                     <div class="shadow-sm p-3 mb-5 bg-body rounded .bg-gradient bg-secondary  bg-opacity-25 ">
                                         <div class="shadow shadow-warning shadow-intensity-lg">
                                         <li style="color: darkgoldenrod;font-size:17.5px;"><b>Web development</b></li>
                                     </div>
                                     </div>
+                                  </div>
+
+                                  <div class="box">  
                                     <div class="shadow-sm p-3 mb-5 bg-body rounded .bg-gradient bg-secondary  bg-opacity-25">
                                         <div class="shadow shadow-warning shadow-intensity-lg">
                                         <li style="color: darkgoldenrod;font-size:17.5px;"><b>Communication Skills</b></li>
                                     </div>
                                     </div>
-                                
+                                </div>
                                     <!--/div-->
                                  </div>
                         
@@ -302,14 +378,14 @@
                     </div>
 
 
-            <div class="container mt-5" id="Resume" >
+            <div class="container pt-5" id="Resume"  >
                 <p><h2 style="color: rgb(255, 255, 255);"><i class="bi bi-file-person display-6 float-lg-start" style="color: darkgoldenrod;"></i>Check out My Resume!</h2>
                     
                     <div class="row">
                         <div >
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <div class="border border-warning rounded-4 .bg-gradient bg-secondary bg-opacity-25">
+                                    <div class="border border-warning rounded-4 .bg-gradient bg-secondary bg-opacity-25 mi">
                                             
                                         <p style="color: darkgoldenrod; font-size: 17.5px; display: flex; align-items: normal;">
                                             <p>
@@ -359,7 +435,7 @@
                                 </div>
 
                                 <div class="col-sm-4">
-                                    <div class="border border-warning rounded-4 .bg-gradient bg-secondary bg-opacity-25">
+                                    <div class="border border-warning rounded-4 .bg-gradient bg-secondary bg-opacity-25 mi">
                                         <p style="color: darkgoldenrod; font-size: 17.5px; display: flex; align-items: normal;">
                                             <h3 style="color: cornsilk; padding-left: 20px;">Volunteering Experience<br></h3><br>
                                             <ul>
@@ -393,7 +469,7 @@
                                         <br>
 
 
-                                    <div class="border border-warning rounded-4 .bg-gradient bg-secondary bg-opacity-25">
+                                    <div class="border border-warning rounded-4 .bg-gradient bg-secondary bg-opacity-25 mi">
                                         <p style="color: darkgoldenrod; font-size: 17.5px; display: flex; align-items: normal;">
                                             <h3 style="color: cornsilk; padding-left: 20px;">Internships<br></h3>
                                             <br>
@@ -422,7 +498,7 @@
                                 </div>
 
                                 <div class="col-sm-4">
-                                    <div class="border border-warning rounded-4 .bg-gradient bg-secondary bg-opacity-25">
+                                    <div class="border border-warning rounded-4 .bg-gradient bg-secondary bg-opacity-25 mi">
                                         <p style="color: darkgoldenrod; font-size: 17.5px; display: flex; align-items: normal;">
                                         
                                             <h3  style="color: cornsilk; padding-left: 20px;">Projects</h3>
